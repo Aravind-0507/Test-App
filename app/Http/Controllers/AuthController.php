@@ -26,7 +26,7 @@ class AuthController extends Controller
      * @OA\Post(
      *     path="/api/register",
      *     summary="Register a new user",
-     *     tags={"Auth"},
+     *     tags={"Authentication"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -44,7 +44,7 @@ class AuthController extends Controller
      * @OA\Post(
      *     path="/api/login",
      *     summary="Login a user",
-     *     tags={"Auth"},
+     *     tags={"Authentication"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -60,7 +60,7 @@ class AuthController extends Controller
      * @OA\Post(
      *     path="/api/google-login",
      *     summary="Login using Google OAuth",
-     *     tags={"Auth"},
+     *     tags={"Authentication"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -75,14 +75,14 @@ class AuthController extends Controller
      * @OA\Get(
      *     path="/api/users",
      *     summary="Get all users",
-     *     tags={"Auth"},
+     *     tags={"Users"},
      *     @OA\Response(response=200, description="List of all users")
      * )
      *
      * @OA\Get(
      *     path="/api/users/{id}",
      *     summary="Get user by ID",
-     *     tags={"Auth"},
+     *     tags={"Users"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -96,7 +96,7 @@ class AuthController extends Controller
      * @OA\Post(
      *     path="/api/users",
      *     summary="Create a user",
-     *     tags={"Auth"},
+     *     tags={"Users"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -114,7 +114,7 @@ class AuthController extends Controller
      * @OA\Put(
      *     path="/api/users/{id}",
      *     summary="Update a user",
-     *     tags={"Auth"},
+     *     tags={"Users"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -137,7 +137,7 @@ class AuthController extends Controller
      * @OA\Delete(
      *     path="/api/users/{id}",
      *     summary="Delete a user",
-     *     tags={"Auth"},
+     *     tags={"Users"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
